@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="media/logowhite.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>сайт</title>
+    <div class='navbar'>
+        <div class='container'>
+            <div class="navbar-items">
+                <div class='links-items'>
+                    <a class='main-page' href="index.html">Главная</a>
+                    <a class='about-page' href="about.html">О нас</a>
+                    <a class='catalog-page' href="products.html">Каталог</a>
+                    <a class="arenda-page" href="productsar.html">Аренда</a>
+                    <a class="garbage-page" href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+    <div class="container">
+        <div class="products-page">
+            <div class="text">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img class="photos" src="media/8.jpg">
+                            <h3>Аренда №1</h3>
+                            <p>Сдаётся уютная однокомнатная квартира в центре города с современным ремонтом. В квартире имеется все необходимое для комфортного проживания: мебель, бытовая техника, интернет. Удобное расположение рядом с магазинами, кафе и общественным транспортом.</p>
+                            <p class="price">4.500 ₽/сутки</p>
+                            <button onclick="window.location.href='booking.html?apartment=1'">Оформить</button>
+                        </div>
+                        <div class="slide">
+                            <img class="photos" src="media/9.jpg">
+                            <h3>Аренда №2</h3>
+                            <p>Сдаётся светлая однокомнатная квартира с современным ремонтом. В квартире есть вся необходимая мебель и бытовая техника, включая стиральную машину и холодильник. Удобное расположение рядом с парком, магазинами и остановками общественного транспорта.</p>
+                            <p class="price">4.700 ₽/сутки</p>
+                            <button onclick="window.location.href='booking.html?apartment=2'">Оформить</button>
+                        </div>
+                        <div class="slide">
+                            <img class="photos" src="media/10.jpg">
+                            <h3>Аренда №3</h3>
+                            <p>Сдаётся однокомнатная квартира с комфортной обстановкой и свежим ремонтом. Квартира полностью меблирована и оснащена необходимой техникой. Находится в удобном районе, рядом с магазинами, и остановками общественного транспорта.</p>
+                            <p class="price">3.900 ₽/сутки</p>
+                            <button onclick="window.location.href='booking.html?apartment=3'">Оформить</button>
+                        </div>
+                        <div class="slide">
+                            <img class="photos" src="media/11.jpg">
+                            <h3>Аренда №4</h3>
+                            <p>Сдаётся однокомнатная квартира с изысканным современным дизайном и качественным ремонтом. Полностью меблирована и оснащена необходимой бытовой техникой. Находится в престижном районе с удобным доступом к кафе, магазинам и общественному транспорту.</p>
+                            <p class="price">5.200 ₽/сутки</p>
+                            <button onclick="window.location.href='booking.html?apartment=4'">Оформить</button>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div class="dot" onclick="currentSlide(1)"></div>
+                        <div class="dot" onclick="currentSlide(2)"></div>
+                        <div class="dot" onclick="currentSlide(3)"></div>
+                        <div class="dot" onclick="currentSlide(4)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-items">
+            </div>
+            <div class="copyright">
+                Работаем с 2011 года. Ваш успех — наша работа!
+            </div>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
+</body>
+</html>
