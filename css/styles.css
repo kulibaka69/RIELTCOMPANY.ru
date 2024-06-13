@@ -1,0 +1,254 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: absolute;
+    background-color: rgb(176,126,75);
+    left: 0%;
+    top: 0%;
+    z-index: 7;
+    width: 100%;
+    height: 54px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.navbar-items {
+    display: flex;
+    height: 54px;
+    padding: 0 12px;
+    position: relative;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.links-items {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: "Gill Sans", sans-serif;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.links-items a {
+    text-decoration: none;
+    color: rgb(255, 249, 244);
+    font-weight: bold;
+    font-family: "Gilroy", sans-serif;
+}
+
+.info-company {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo-company {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.description-company {
+    flex: 0 0 70%;
+    color: rgb(42, 41, 41);
+    font-family: "Gilroy", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 120px;
+}
+
+.footer {
+    background-color: rgb(176,126,75);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(154, 154, 154);
+    text-align: center;
+    font-family: "Gilroy", sans-serif;
+}
+
+.contacts a {
+    color: white;
+    font-family: "Gilroy", sans-serif;
+}
+
+.information {
+    margin-left: 35%;
+}
+
+.information a {
+    color: white;
+    font-family: "Gilroy", sans-serif;
+}
+
+.copyright {
+    font-size: 16px;
+    color: rgb(237, 227, 227);
+    text-align: center;
+    margin-top: 25px;
+    font-family: "Gilroy", sans-serif;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url();
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    align-content: center;
+}
+
+.catalog-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+}
+
+.catalog-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #444;
+}
+
+.catalog-item h3 {
+    margin-top: 10px;
+}
+
+.catalog-item p {
+    margin: 10px 0;
+}
+
+.catalog-item .price {
+    font-size: 1.2em;
+    color: #838282;
+    font-weight: bold;
+    border: 1px solid #cccccc48;
+    background-color: rgba(0, 0, 0, 0.014);
+    border-radius: 10px;
+    font-weight: 200;
+}
+
+.text {
+    margin-top: 10%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    padding-bottom: 70px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 3%; 
+    height: 600px; /* Задаем фиксированную высоту слайдера */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 95%; /* Устанавливаем высоту на 100% от контейнера */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    height: 95%; /* Устанавливаем высоту на 100% от контейнера */
+}
+
+.slide img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #444;
+}
+
+.slide h3 {
+    margin-top: 10px;
+}
+
+.slide p {
+    margin: 10px 0;
+}
+
+.slide .price {
+    font-size: 1.2em;
+    color: #2b2b2b;
+    font-weight: bold;
+    border: 1px solid #cccccc48;
+    background-color: rgba(0, 0, 0, 0.014);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
